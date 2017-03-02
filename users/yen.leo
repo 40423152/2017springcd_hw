@@ -19,7 +19,7 @@
 <v t="leo.20151213085727.1"><vh>@button pelican-blog</vh></v>
 <v t="leo.20161124144859.1"><vh>@button https server</vh></v>
 </v>
-<v t="leo.20170301231504.1"><vh>@clean index.html</vh>
+<v t="leo.20170301231504.1" a="E"><vh>@clean index.html</vh>
 <v t="leo.20170301231504.2" a="E"><vh>html</vh>
 <v t="leo.20170301231504.3"><vh>head</vh></v>
 <v t="leo.20170301231504.4" a="E"><vh>body</vh>
@@ -34,6 +34,9 @@
 <v t="leo.20170301231504.11" a="E"><vh>每周任務</vh>
 <v t="leo.20170301231504.12" a="E"><vh>第一周</vh>
 <v t="leo.20170301231504.13"><vh>電腦輔助設計在教什麼?</vh></v>
+</v>
+<v t="leo.20170302113019.1" a="E"><vh>第二周</vh>
+<v t="leo.20170302113019.2"><vh>20170302</vh></v>
 </v>
 </v>
 </v>
@@ -77,6 +80,7 @@
 <v t="amd.20160106093454.1" a="E"><vh>40423152 所寫的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>201703</vh>
 <v t="leo.20170112145109.1"><vh>@edit 20170301.md</vh></v>
+<v t="leo.20170302112411.1"><vh>@edit 20170302.md</vh></v>
 </v>
 </v>
 </v>
@@ -391,5 +395,18 @@ Created by [40423152](https://github.com/40423152/2017springcd_hw)
 
 						
 </t>
+<t tx="leo.20170302113019.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170302113019.2">## 四連桿組合
+
+&lt;iframe src="https://player.vimeo.com/video/206343950" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/206343950"&gt;2017-03-02 10-48-51&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
 </tnodes>
 </leo_file>
