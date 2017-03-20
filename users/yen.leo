@@ -41,6 +41,9 @@
 <v t="leo.20170309113430.1" a="E"><vh>第三周</vh>
 <v t="leo.20170309113430.2"><vh>20170309</vh></v>
 </v>
+<v t="leo.20170321013624.1" a="E"><vh>第四周</vh>
+<v t="leo.20170321013624.2"><vh>20170316</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -426,5 +429,18 @@ Created by [40423152](https://github.com/40423152/2017springcd_hw)
 
 &lt;iframe src="https://player.vimeo.com/video/207569345" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/207569345"&gt;20170309&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
+<t tx="leo.20170321013624.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170321013624.2">## fossil
+
+&lt;iframe src="https://player.vimeo.com/video/209247673" width="640" height="192" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/209247673"&gt;2017-03-21_01-27-43&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
 </tnodes>
 </leo_file>
