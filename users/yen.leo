@@ -44,6 +44,12 @@
 <v t="leo.20170321013624.1" a="E"><vh>第四周</vh>
 <v t="leo.20170321013624.2"><vh>20170316</vh></v>
 </v>
+<v t="leo.20170413025719.1" a="E"><vh>第五周</vh>
+<v t="leo.20170413025719.2"><vh>20170323</vh></v>
+</v>
+<v t="leo.20170413025721.1" a="E"><vh>第六周</vh>
+<v t="leo.20170413025721.2"><vh>20170330</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -89,6 +95,8 @@
 <v t="leo.20170302112411.1"><vh>@edit 20170302.md</vh></v>
 <v t="leo.20170309113515.1"><vh>@edit 20170309.md</vh></v>
 <v t="leo.20170316110049.1"><vh>@edit 20170316.md</vh></v>
+<v t="leo.20170413024418.1"><vh>@edit 20170323.md</vh></v>
+<v t="leo.20170413024420.1"><vh>@edit 20170330.md</vh></v>
 </v>
 </v>
 </v>
@@ -442,5 +450,32 @@ Created by [40423152](https://github.com/40423152/2017springcd_hw)
 
 &lt;iframe src="https://player.vimeo.com/video/209247673" width="640" height="192" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/209247673"&gt;2017-03-21_01-27-43&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
+<t tx="leo.20170413025719.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170413025719.2">## 直升機
+
+&lt;iframe src="https://player.vimeo.com/video/212965001" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/212965001"&gt;錄製_2017_04_13_02_29_05_3&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+</t>
+<t tx="leo.20170413025721.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170413025721.2">## 8bars
+
+&lt;iframe src="https://player.vimeo.com/video/212952483" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/212952483"&gt;錄製_2017_04_12_22_49_21_902&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
 </tnodes>
 </leo_file>
