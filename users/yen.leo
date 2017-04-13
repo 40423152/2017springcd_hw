@@ -47,7 +47,7 @@
 <v t="leo.20170413025719.1" a="E"><vh>第五周</vh>
 <v t="leo.20170413025719.2"><vh>20170323</vh></v>
 </v>
-<v t="leo.20170413025721.1" a="E"><vh>第六周</vh>
+<v t="leo.20170413025721.1" a="E"><vh>第六&amp;七周</vh>
 <v t="leo.20170413025721.2"><vh>20170330</vh></v>
 </v>
 </v>
@@ -97,6 +97,7 @@
 <v t="leo.20170316110049.1"><vh>@edit 20170316.md</vh></v>
 <v t="leo.20170413024418.1"><vh>@edit 20170323.md</vh></v>
 <v t="leo.20170413024420.1"><vh>@edit 20170330.md</vh></v>
+<v t="leo.20170413092822.1"><vh>@edit 20170413.md</vh></v>
 </v>
 </v>
 </v>
@@ -300,7 +301,7 @@ make.start()</t>
 </t>
 <t tx="leo.20170301231504.13">## 四連桿實體版本
 
-自評分數:80
+自評分數:73
 
 &lt;iframe src="https://player.vimeo.com/video/206266484" width="640" height="325" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/206266484"&gt;2017-03-02 00-32-32&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
@@ -424,7 +425,7 @@ Created by [40423152](https://github.com/40423152/2017springcd_hw)
 </t>
 <t tx="leo.20170302113019.2">## 四連桿組合
 
-自評分數:80
+自評分數:78
 
 &lt;iframe src="https://player.vimeo.com/video/206343950" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/206343950"&gt;2017-03-02 10-48-51&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
@@ -439,7 +440,7 @@ Created by [40423152](https://github.com/40423152/2017springcd_hw)
 </t>
 <t tx="leo.20170309113430.2">## 影片翻譯 14-4
 
-自評分數:80
+自評分數:73
 
 &lt;iframe src="https://player.vimeo.com/video/207569345" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/207569345"&gt;20170309&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
@@ -454,7 +455,7 @@ Created by [40423152](https://github.com/40423152/2017springcd_hw)
 </t>
 <t tx="leo.20170321013624.2">## fossil
 
-自評分數:75
+自評分數:73
 
 &lt;iframe src="https://player.vimeo.com/video/209247673" width="640" height="192" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/209247673"&gt;2017-03-21_01-27-43&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
@@ -485,7 +486,7 @@ Created by [40423152](https://github.com/40423152/2017springcd_hw)
 </t>
 <t tx="leo.20170413025721.2">## 8bars
 
-自評分數:80
+自評分數:75
 
 &lt;iframe src="https://player.vimeo.com/video/212952483" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/212952483"&gt;錄製_2017_04_12_22_49_21_902&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
