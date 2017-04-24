@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/zuo-ye.atom.xml" rel="self"></link><id>./</id><updated>2017-04-13T12:08:00+08:00</updated><entry><title>協同產品設計實習 第八周作業 40423152</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-di-ba-zhou-zuo-ye-40423152.html" rel="alternate"></link><published>2017-04-13T12:08:00+08:00</published><updated>2017-04-13T12:08:00+08:00</updated><author><name>40423152</name></author><id>tag:,2017-04-13:./xie-tong-chan-pin-she-ji-shi-xi-di-ba-zhou-zuo-ye-40423152.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/zuo-ye.atom.xml" rel="self"></link><id>./</id><updated>2017-04-20T12:08:00+08:00</updated><entry><title>協同產品設計實習 第九周作業(期中考) 40423152</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-di-jiu-zhou-zuo-ye-qi-zhong-kao-40423152.html" rel="alternate"></link><published>2017-04-20T12:08:00+08:00</published><updated>2017-04-20T12:08:00+08:00</updated><author><name>40423152</name></author><id>tag:,2017-04-20:./xie-tong-chan-pin-she-ji-shi-xi-di-jiu-zhou-zuo-ye-qi-zhong-kao-40423152.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;本周內容&lt;/p&gt;
+&lt;p&gt;1.小組fossil serve在上課時已查驗&lt;/p&gt;
+&lt;p&gt;2.各組員倉儲中的 T 點軌跡座標檔
+&lt;a href="http://imgur.com/ZI1ot4t"&gt;&lt;img src="http://i.imgur.com/ZI1ot4t.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/6Gv0ine"&gt;&lt;img src="http://i.imgur.com/6Gv0ine.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;影片如下
+&lt;iframe src="https://player.vimeo.com/video/214495718" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/214495718"&gt;40423152-國立虎尾科技大學-機械設計工程系-trace point&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;3.四足行走模擬&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/214495571" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/214495571"&gt;40423152-國立虎尾科技大學-機械設計工程系-四足&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;4.STL viewer
+利用 &lt;a href="https://github.com/JinJunho/Madeleine.js"&gt;Madeleine 程式庫&lt;/a&gt;, 擷取位於 ./../data/fourfoot.stl 位置的零件 stl 格式檔案:&lt;/p&gt;
+&lt;p&gt;&lt;link href="./../data/madeleine/src/css/Madeleine.css" rel="stylesheet"&gt;
+&lt;script src="./../data/madeleine/src/lib/stats.js"&gt;&lt;/script&gt;
+&lt;script src="./../data/madeleine/src/lib/detector.js"&gt;&lt;/script&gt;
+&lt;script src="./../data/madeleine/src/lib/three.min.js"&gt;&lt;/script&gt;
+&lt;script src="./../data/madeleine/src/Madeleine.js"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;div id="target" class="madeleine"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+window.onload = function(){
+    var madeleine = new Madeleine({
+      target: 'target', // target div id
+      data: './../data/fourfoot.stl', // data path
+      path: './../data/madeleine/src/' // path to source directory from current html file
+    });
+}; 
+&lt;/script&gt;</summary><category term="作業"></category></entry><entry><title>協同產品設計實習 第八周作業 40423152</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-di-ba-zhou-zuo-ye-40423152.html" rel="alternate"></link><published>2017-04-13T12:08:00+08:00</published><updated>2017-04-13T12:08:00+08:00</updated><author><name>40423152</name></author><id>tag:,2017-04-13:./xie-tong-chan-pin-she-ji-shi-xi-di-ba-zhou-zuo-ye-40423152.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;本周內容&lt;/p&gt;
 &lt;p&gt;所有影片統整&lt;/p&gt;
