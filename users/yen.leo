@@ -50,6 +50,9 @@
 <v t="leo.20170413025721.1" a="E"><vh>第六&amp;七周</vh>
 <v t="leo.20170413025721.2"><vh>20170330</vh></v>
 </v>
+<v t="leo.20170424232121.1" a="E"><vh>第九周</vh>
+<v t="leo.20170424232121.2"><vh>20170420</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -491,5 +494,20 @@ Created by [40423152](https://github.com/40423152/2017springcd_hw)
 
 &lt;iframe src="https://player.vimeo.com/video/212952483" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/212952483"&gt;錄製_2017_04_12_22_49_21_902&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
+<t tx="leo.20170424232121.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170424232121.2">## 四足
+
+自評分數:78
+
+&lt;iframe src="https://player.vimeo.com/video/214495571" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/214495571"&gt;40423152-國立虎尾科技大學-機械設計工程系-四足&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
 </tnodes>
 </leo_file>
