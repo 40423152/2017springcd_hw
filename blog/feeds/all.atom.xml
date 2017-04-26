@@ -6,10 +6,13 @@
 &lt;p&gt;2.各組員倉儲中的 T 點軌跡座標檔
 &lt;a href="http://imgur.com/ZI1ot4t"&gt;&lt;img src="http://i.imgur.com/ZI1ot4t.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://imgur.com/6Gv0ine"&gt;&lt;img src="http://i.imgur.com/6Gv0ine.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Brython
+&lt;p&gt;Brython 可是他跑不出來....
+程式碼節錄自
+&lt;a href="http://imgur.com/qmxnRHL"&gt;&lt;img src="http://i.imgur.com/qmxnRHL.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;script type="text/javascript" 
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt;&lt;/p&gt;
+&lt;/script&gt;
+
 &lt;!-- 啟動 Brython --&gt;
 
 &lt;script&gt;
@@ -77,20 +80,23 @@ ctx.closePath()
 &lt;p&gt;&lt;a href="https://vimeo.com/214495571"&gt;40423152-國立虎尾科技大學-機械設計工程系-四足&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;4.STL viewer
-利用 &lt;a href="https://github.com/JinJunho/Madeleine.js"&gt;Madeleine 程式庫&lt;/a&gt;, 擷取位於 ./../data/foot.stl 位置的零件 stl 格式檔案:&lt;/p&gt;
-&lt;p&gt;&lt;link href="./../work/madeleine/src/css/Madeleine.css" rel="stylesheet"&gt;
-&lt;script src="./../work/madeleine/src/stats.js"&gt;&lt;/script&gt;
-&lt;script src="./../work/madeleine/src/detector.js"&gt;&lt;/script&gt;
-&lt;script src="./../work/madeleine/src/three.min.js"&gt;&lt;/script&gt;
-&lt;script src="./../work/madeleine/src/Madeleine.js"&gt;&lt;/script&gt;&lt;/p&gt;
+利用 &lt;a href="https://github.com/JinJunho/Madeleine.js"&gt;Madeleine 程式庫&lt;/a&gt;, 擷取位於 ./../data/foot.stl 位置的零件 stl 格式檔案:
+近端跑得出來 遠端無法.....
+附上近端圖片&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/1AxGAVn"&gt;&lt;img src="http://i.imgur.com/1AxGAVn.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;link href="./../data/madeleine/src/css/Madeleine.css" rel="stylesheet"&gt;
+&lt;script src="./../data/madeleine/src/lib/stats.js"&gt;&lt;/script&gt;
+&lt;script src="./../data/madeleine/src/lib/detector.js"&gt;&lt;/script&gt;
+&lt;script src="./../data/madeleine/src/lib/three.min.js"&gt;&lt;/script&gt;
+&lt;script src="./../data/madeleine/src/Madeleine.js"&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;div id="target" class="madeleine"&gt;&lt;/div&gt;
 
 &lt;script&gt;
 window.onload = function(){
     var madeleine = new Madeleine({
       target: 'target', // target div id
-      data: './../work/foot.stl', // data path
-      path: './../work/madeleine/src/' // path to source directory from current html file
+      data: './../data/spikeball.stl', // data path
+      path: './../data/madeleine/src/' // path to source directory from current html file
     });
 }; 
 &lt;/script&gt;
@@ -101,9 +107,9 @@ window.onload = function(){
 &lt;script src="https://rawgit.com/mrdoob/three.js/master/examples/js/controls/TrackballControls.js"
 &gt;&lt;/script&gt;
 
-&lt;script src="./../work/w9/loader.js"&gt;&lt;/script&gt;
+&lt;script src="./../data/w9/loader.js"&gt;&lt;/script&gt;
 
-&lt;script src="./../work/w9/stl.js"&gt;&lt;/script&gt;
+&lt;script src="./../data/w9/stl.js"&gt;&lt;/script&gt;
 
 &lt;div&gt;
 select stl file: &lt;input type="file" id="file" /&gt; or drop stl file
