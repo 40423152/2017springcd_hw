@@ -15,7 +15,7 @@
 &lt;p&gt;&lt;a href="https://vimeo.com/214495571"&gt;40423152-國立虎尾科技大學-機械設計工程系-四足&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;4.STL viewer
-利用 &lt;a href="https://github.com/JinJunho/Madeleine.js"&gt;Madeleine 程式庫&lt;/a&gt;, 擷取位於 ./../data/fourfoot.stl 位置的零件 stl 格式檔案:&lt;/p&gt;
+利用 &lt;a href="https://github.com/JinJunho/Madeleine.js"&gt;Madeleine 程式庫&lt;/a&gt;, 擷取位於 ./../data/foot.stl 位置的零件 stl 格式檔案:&lt;/p&gt;
 &lt;p&gt;&lt;link href="./../data/madeleine/src/css/Madeleine.css" rel="stylesheet"&gt;
 &lt;script src="./../data/madeleine/src/lib/stats.js"&gt;&lt;/script&gt;
 &lt;script src="./../data/madeleine/src/lib/detector.js"&gt;&lt;/script&gt;
