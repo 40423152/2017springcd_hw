@@ -11,11 +11,11 @@
 程式碼節錄自本人leo&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://imgur.com/qmxnRHL"&gt;&lt;img src="http://i.imgur.com/qmxnRHL.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;script type="text/javascript" 
-    src="./../data/Brython-3.3.1/brython.js"&gt;
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython.js"&gt;
 &lt;/script&gt;
 
-&lt;script type="text/javascript" 
-    src="./../data/Brython-3.3.1/brython_stdlib.js"&gt;
+&lt;script type="text/javascript"
+    src="https://cdn.rawgit.com/brython-dev/brython/3.3.1/www/src/brython_stdlib.js"&gt;
 &lt;/script&gt;
 
 &lt;!-- 啟動 Brython --&gt;
