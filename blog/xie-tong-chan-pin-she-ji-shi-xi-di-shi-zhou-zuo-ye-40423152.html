@@ -314,42 +314,203 @@ init_mathjax();
                 <!-- PELICAN_END_SUMMARY -->
 
 <p>本周內容</p>
-<p>1.四則運算</p>
+<p>在python上面執行加減乘除</p>
+<p>當時在上課時構思能否用html語法進行互動</p>
+<p>後來老師使用Brython執行成功</p>
+<p>不過似乎不能消除前面的值</p>
+<p>以下程式碼以Python呈現</p>
+<p>互動程式已Brython呈現</p>
+<h1>四則運算</h1>
 <pre class="brush: python">
 def add(a,b): //加法運算法則
    return a+b
-def minus(a,b)://減法運算法則
-  return a-b
-def cross(a,b)://乘法運算法則
-  return a*b
-def div(a,b)://除法運算法則
-   return a/b
 
 import sys//加法運算程式
 sys.path.append("./m1")
 import add 
-sum=add.add(1,3)
+sum=add.add(a,b)
 print(sum) 
-
-import sys//減法運算程式
-sys.path.append("./m1")
-import minus
-sum=minus.minus(1,-100)
-print(sum)
-
-import sys//乘法運算程式
-sys.path.append("./m1")
-import cross
-sum=cross.cross(1,200)
-print(sum)
-
-import sys//除法運算程式
-sys.path.append("./m1")
-import div
-sum=div.div(1,20)
-print(sum)
 </pre>
 
+<p>測試加法
+<!-- PELICAN_END_SUMMARY --></p>
+<!-- 導入 Brython 標準程式庫 -->
+
+<script src="../data/Brython-3.3.1/brython.js"></script>
+
+<script src="../data/Brython-3.3.1/brython_stdlib.js"></script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫四連桿 trace point 路徑-->
+
+<!--<canvas id="w10" width="800" height="600"></canvas>-->
+
+<div id="container" width="600" height="400"></div>
+
+<script type="text/python3">
+from browser import document as doc
+from browser import html
+import math
+container = doc['container']
+degree = math.pi/180
+def button1(event):
+    a = input("give me a")
+    b = input("give me b")
+    container <= str(float(a)+float(b))
+doc["button1"].bind("click", button1)
+
+</script>
+
+<p><button id="button1">按下請定義值</button>
+<pre class="brush: python">
+def minus(a,b)://減法運算法則
+  return a-b</p>
+<p>import sys//減法運算程式
+sys.path.append("./m1")
+import minus
+sum=minus.minus(a,b)
+</pre>
+測試減法
+<!-- PELICAN_END_SUMMARY --></p>
+<!-- 導入 Brython 標準程式庫 -->
+
+<script src="../data/Brython-3.3.1/brython.js"></script>
+
+<script src="../data/Brython-3.3.1/brython_stdlib.js"></script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫四連桿 trace point 路徑-->
+
+<!--<canvas id="w10" width="800" height="600"></canvas>-->
+
+<div id="container1" width="600" height="400"></div>
+
+<script type="text/python3">
+from browser import document as doc
+from browser import html
+import math
+container = doc['container1']
+degree = math.pi/180
+def button2(event):
+    a = input("give me a")
+    b = input("give me b")
+    container <= str(float(a)-float(b))
+doc["button2"].bind("click", button2)
+
+</script>
+
+<p><button id="button2">按下請定義值</button>
+<pre class="brush: python">
+print(sum)def cross(a,b)://乘法運算法則
+  return a*b</p>
+<p>import sys//乘法運算程式
+sys.path.append("./m1")
+import cross
+sum=cross.cross(a,b)
+</pre>
+測試乘法
+<!-- PELICAN_END_SUMMARY --></p>
+<!-- 導入 Brython 標準程式庫 -->
+
+<script src="../data/Brython-3.3.1/brython.js"></script>
+
+<script src="../data/Brython-3.3.1/brython_stdlib.js"></script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫四連桿 trace point 路徑-->
+
+<!--<canvas id="w10" width="800" height="600"></canvas>-->
+
+<div id="container3" width="600" height="400"></div>
+
+<script type="text/python3">
+from browser import document as doc
+from browser import html
+import math
+container = doc['container3']
+degree = math.pi/180
+def button3(event):
+    a = input("give me a")
+    b = input("give me b")
+    container <= str(float(a)*float(b))
+doc["button3"].bind("click", button3)
+
+</script>
+
+<p><button id="button3">按下請定義值</button></p>
+<pre class="brush: python">
+print(sum)def div(a,b)://除法運算法則
+   return a/b
+
+ import sys//除法運算程式
+sys.path.append("./m1")
+import div
+sum=div.div(a,b)
+print(sum)  
+</pre>
+
+<p>測試除法
+<!-- PELICAN_END_SUMMARY --></p>
+<!-- 導入 Brython 標準程式庫 -->
+
+<script src="../data/Brython-3.3.1/brython.js"></script>
+
+<script src="../data/Brython-3.3.1/brython_stdlib.js"></script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫四連桿 trace point 路徑-->
+
+<!--<canvas id="w10" width="800" height="600"></canvas>-->
+
+<div id="container4" width="600" height="400"></div>
+
+<script type="text/python3">
+from browser import document as doc
+from browser import html
+import math
+container = doc['container4']
+degree = math.pi/180
+def button4(event):
+    a = input("give me a")
+    b = input("give me b")
+    container <= str(float(a)/float(b))
+doc["button4"].bind("click", button4)
+
+</script>
+
+<p><button id="button4">按下請定義值</button></p>
 <iframe src="https://player.vimeo.com/video/214954707" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <p><a href="https://vimeo.com/214954707">40423152-國立虎尾科技大學-機械設計工程系-四則運算</a> from <a href="https://vimeo.com/user46451216">Willy Lai</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
