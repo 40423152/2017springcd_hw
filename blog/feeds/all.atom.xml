@@ -2,6 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-05-04T12:08:00+08:00</updated><entry><title>協同產品設計實習 第十一周作業 40423152</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-di-shi-yi-zhou-zuo-ye-40423152.html" rel="alternate"></link><published>2017-05-04T12:08:00+08:00</published><updated>2017-05-04T12:08:00+08:00</updated><author><name>40423152</name></author><id>tag:,2017-05-04:./xie-tong-chan-pin-she-ji-shi-xi-di-shi-yi-zhou-zuo-ye-40423152.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;本周內容&lt;/p&gt;
+&lt;p&gt;1.閱讀關於Onshape的兩本書籍，當中看到一項十分中肯(如附圖)的事實&lt;/p&gt;
+&lt;p&gt;對於此已經十分"習慣"Solidworks的我來說十分便利，而且也較solvespace人性化，又有像是github一樣的commit紀錄，隨時追蹤設計狀況。&lt;/p&gt;
+&lt;p&gt;一開始對於線上的soliworks(就是onshape)覺得應該是閹割過的版本吧，不過做得盡善盡美，輸出DXF也是沒有問題的。&lt;/p&gt;
+&lt;p&gt;重點是他居然可以線上協作，這是令我最喜歡也最驚豔的功能。&lt;/p&gt;
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script src="../data/Brython-3.3.1/brython.js"&gt;&lt;/script&gt;
@@ -150,7 +154,7 @@ x = (canvas.width)/2
 y = (canvas.height)/2
 r = 0.8*(canvas.height/2)
 # 齒數
-n = 1000
+n = 10
 # 壓力角
 pa = 20
 Spur(ctx).Gear(x, y, r, n, pa, "blue")
