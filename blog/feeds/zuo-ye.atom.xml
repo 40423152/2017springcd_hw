@@ -286,7 +286,7 @@ set_interval(draw, 2)
 &lt;/script&gt;
 
 &lt;p&gt;設法處理兩種正齒輪嚙合的協同繪圖 (17t-11t-13t):&lt;/p&gt;
-&lt;canvas id='gear3' width='800' height='400'&gt;&lt;/canvas&gt;
+&lt;canvas id='gear8' width='800' height='400'&gt;&lt;/canvas&gt;
 
 &lt;script type="text/python3"&gt;
 # 導入 browser 模組中的 document, 並設為 doc 變數
@@ -412,8 +412,8 @@ class Spur(object):
             # 下列為齒頂圓上用來近似圓弧的直線
             self.create_line(lfx,lfy,rfx,rfy,fill=color)
 
-# 準備在 id="gear3" 的 canvas 中繪圖
-canvas = doc["gear3"]
+# 準備在 id="gear8" 的 canvas 中繪圖
+canvas = doc["gear8"]
 ctx = canvas.getContext("2d")
 
 # 模數決定齒的尺寸大小, 囓合齒輪組必須有相同的模數與壓力角
@@ -425,12 +425,18 @@ n_g1 = 17
 n_g2 = 11
 # 第3齒輪齒數
 n_g3 = 13
+n_g4 = 13
+n_g5 = 13
+n_g6 = 13
 # m 為模數, 根據畫布的寬度, 計算適合的模數大小
-m = (0.8*canvas.width)/(n_g1+n_g2+n_g3)
+m = (0.8*canvas.width)/(n_g1+n_g2+n_g3+n_g4+n_g5+n_g6)
 # 根據模數 m, 計算各齒輪的節圓半徑
 rp_g1 = m*n_g1/2
 rp_g2 = m*n_g2/2
 rp_g3 = m*n_g3/2
+rp_g4 = m*n_g4/2
+rp_g5 = m*n_g5/2
+rp_g6 = m*n_g6/2
 #單一正齒輪繪圖呼叫格式 Spur(ctx).Gear(x, y, r, n, pa, "blue")
 # 開始繪製囓合齒輪輪廓
 # 繪圖第1齒輪的圓心座標, 因為希望繪圖佔去 canvas.width 的 80%, 所以兩邊各預留 10% 距離
@@ -443,6 +449,16 @@ y_g2 = y_g1
 # 第3齒輪的圓心座標
 x_g3 = x_g1 + rp_g1 + 2*rp_g2 + rp_g3
 y_g3 = y_g1
+x_g3 = x_g1 + rp_g1 + 3*rp_g2 + 2*rp_g3
+y_g3 = y_g1
+x_g4 = x_g1 + rp_g1 + 4*rp_g2 + 3*rp_g3+ rp_g4
+y_g4 = y_g1
+x_g5 = x_g1 + rp_g1 + 5*rp_g2 + 4*rp_g3+ 2*rp_g4+rp_g5
+y_g5 = y_g1
+x_g6 = x_g1 + rp_g1 + 6*rp_g2 + 5*rp_g3+ 3*rp_g4+2*rp_g5+rp_g6
+y_g6 = y_g1
+
+
 
 # 將第1齒輪順時鐘轉 90 度, 也就是 math.pi/2
 # 使用 ctx.save() 與 ctx.restore() 以確保各齒輪以相對座標進行旋轉繪圖
@@ -484,6 +500,28 @@ ctx.rotate(-math.pi/2-math.pi/n_g3+(math.pi+math.pi/n_g2)*n_g2/n_g3)
 # put it back
 ctx.translate(-x_g3, -y_g3)
 Spur(ctx).Gear(x_g3, y_g3, rp_g3, n_g3, pa, "#66009D")
+ctx.restore()
+
+ctx.save()
+ctx.translate(x_g4, y_g4)
+ctx.rotate(-math.pi/2-math.pi/n_g4+(math.pi+math.pi/n_g3)*n_g3/n_g4)
+ctx.translate(-x_g4, -y_g4)
+Spur(ctx).Gear(x_g4, y_g4, rp_g4, n_g4, pa, "#66009D")
+ctx.restore()
+
+ctx.save()
+ctx.translate(x_g5, y_g5)
+ctx.rotate(-math.pi/2-math.pi/n_g5+(math.pi+math.pi/n_g4)*n_g4/n_g5)
+ctx.translate(-x_g5, -y_g5)
+Spur(ctx).Gear(x_g5, y_g5, rp_g5, n_g5, pa, "#66009D")
+ctx.restore()
+
+
+ctx.save()
+ctx.translate(x_g6, y_g6)
+ctx.rotate(-math.pi/2-math.pi/n_g6+(math.pi+math.pi/n_g5)*n_g5/n_g6)
+ctx.translate(-x_g6, -y_g6)
+Spur(ctx).Gear(x_g6, y_g6, rp_g6, n_g6, pa, "#66009D")
 ctx.restore()
 &lt;/script&gt;</summary><category term="作業"></category></entry><entry><title>協同產品設計實習 第十二周作業 40423152</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-di-shi-er-zhou-zuo-ye-40423152.html" rel="alternate"></link><published>2017-05-11T12:08:00+08:00</published><updated>2017-05-11T12:08:00+08:00</updated><author><name>40423152</name></author><id>tag:,2017-05-11:./xie-tong-chan-pin-she-ji-shi-xi-di-shi-er-zhou-zuo-ye-40423152.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
