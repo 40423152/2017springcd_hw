@@ -21,6 +21,8 @@ brython({debug:1, pythonpath:['./../data/py']});
 
 &lt;canvas id="onegear" width="800" height="600"&gt;&lt;/canvas&gt;
 
+&lt;div id="onegear_div" width="800" height="20"&gt;&lt;/div&gt;
+
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 import math
@@ -144,14 +146,26 @@ class Spur(object):
             self.create_line(lfx,lfy,rfx,rfy,fill=color)
 canvas = doc['onegear']
 ctx = canvas.getContext("2d")
-x = (canvas.width)/5
-y = (canvas.height)/5
-r = 0.5*(canvas.height/2)
+x = (canvas.width)/2
+y = (canvas.height)/2
+r = 0.8*(canvas.height/2)
 # 齒數
 n = 52
 # 壓力角
 pa = 20
 Spur(ctx).Gear(x, y, r, n, pa, "blue")
+# 以下列出 W11 2B 未出席人數
+data = open("./../data/w11/2b0503.txt", encoding="utf-8").read()
+count = 0
+# 去掉前面兩列
+student = data.split("\n")[2:]
+for i in range(len(student)):
+    each = student[i].split("\t")
+    if each[1] != "出席":
+        count = count + 1
+#print(count)
+div = doc["onegear_div"]
+div &lt;= "2b: " +  str(count) + "/" + str(len(student))
 &lt;/script&gt;</summary><category term="作業"></category></entry><entry><title>協同產品設計實習 第十二測試周作業 40423152</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-di-shi-er-ce-shi-zhou-zuo-ye-40423152.html" rel="alternate"></link><published>2017-05-11T12:56:00+08:00</published><updated>2017-05-11T12:56:00+08:00</updated><author><name>40423152</name></author><id>tag:,2017-05-11:./xie-tong-chan-pin-she-ji-shi-xi-di-shi-er-ce-shi-zhou-zuo-ye-40423152.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;本周內容&lt;/p&gt;
