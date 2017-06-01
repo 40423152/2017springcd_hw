@@ -479,18 +479,10 @@ ctx.strokeStyle = "white"
 ctx.moveTo(0,600)
 ctx.lineTo(800,600)
 ctx.stroke()
-# 以下列出 W11 2B 未出席人數
-data = open("./../data/w11/2b0503.txt", encoding="utf-8").read()
-count = 0
-# 去掉前面兩列
-student = data.split("\n")[2:]
-for i in range(len(student)):
-    each = student[i].split("\t")
-    if each[1] != "出席":
-        count = count + 1
-#print(count)
+
+
 div = doc["onegear_div"]
-div <= "2b: " +  str(count) + "/" + str(len(student))
+
 
 </script>
 
@@ -512,9 +504,9 @@ brython({debug:1, pythonpath:['./../data/py']});
 
 <!-- 以下實際利用  Brython 繪圖-->
 
-<canvas id="onegear1" width="800" height="600"></canvas>
+<canvas id="onegear" width="800" height="600"></canvas>
 
-<div id="onegear1_div" width="800" height="20"></div>
+<div id="onegear_div" width="800" height="20"></div>
 
 <script type="text/python3">
 from browser import document as doc
@@ -541,7 +533,7 @@ class Spur(object):
     # pa 為壓力角 (deg)
     # rot 為旋轉角 (deg)
     # 已經針對 n 大於等於 52 齒時的繪圖錯誤修正, 因為 base circle 與齒根圓大小必須進行判斷
-    def Gear(self, midx, midy, rp, n=20, pa=20, color="black"):
+    def Gear(self, midx, midy, rp, n=17, pa=20, color="black"):
         # 齒輪漸開線分成 15 線段繪製
         imax = 15
         # 在輸入的畫布上繪製直線, 由圓心到節圓 y 軸頂點畫一直線
@@ -637,29 +629,20 @@ class Spur(object):
             # lfx 為齒頂圓上的左側 x 座標, lfy 則為 y 座標
             # 下列為齒頂圓上用來近似圓弧的直線
             self.create_line(lfx,lfy,rfx,rfy,fill=color)
-canvas = doc['onegear1']
+canvas = doc['onegear']
 ctx = canvas.getContext("2d")
 x = (canvas.width)/2
-y = (canvas.height)/2
-r = 0.8*(canvas.height/2)
+y = (canvas.height)/2+2400
+r = 8*(canvas.height/2)
 # 齒數
-n = 10
+n = 20
 # 壓力角
 pa = 20
-Spur(ctx).Gear(x, y, r, n, pa, "blue")
-# 以下列出 W11 2B 未出席人數
-data = open("./../data/w11/2b0503.txt", encoding="utf-8").read()
-count = 0
-# 去掉前面兩列
-student = data.split("\n")[2:]
-for i in range(len(student)):
-    each = student[i].split("\t")
-    if each[1] != "出席":
-        count = count + 1
-#print(count)
-div = doc["onegear1_div"]
-div <= "2b: " +  str(count) + "/" + str(len(student))
-</script>
+Spur(ctx).Gear(x, y, r, n, pa, "purple")
+ctx.fillStyle = "#33FF33"
+ctx.font = "30px ScriptS"
+ctx.fillText("40423152",(canvas.width)/2-60,(canvas.height)/2)
+ctx.stroke()
             </div>
             <!-- /.entry-content -->
         </article>
