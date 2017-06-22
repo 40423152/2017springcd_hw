@@ -1276,7 +1276,24 @@ div = doc["onegear1_div"]
 <p>5:40423131</p>
 <p>6:40423132</p>
 <p>7:40423152</p>
-<canvas id='gear3' width='1200' height='800'></canvas>
+<!-- 導入 Brython 標準程式庫 -->
+
+<script src="../data/Brython-3.3.1/brython.js"></script>
+
+<script src="../data/Brython-3.3.1/brython_stdlib.js"></script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+</script>
+
+<!-- 以下實際利用  Brython 繪圖-->
+
+<canvas id='gear3' width='1000' height='600'></canvas>
 
 <script type="text/python3">
 # 導入 browser 模組中的 document, 並設為 doc 變數
@@ -1289,7 +1306,7 @@ class Spur(object):
     def __init__(self, ctx):
         self.ctx = ctx
 
-    def create_line(self, x1, y1, x2, y2, width=3, fill="white"):
+    def create_line(self, x1, y1, x2, y2, width=3, fill="red"):
         self.ctx.beginPath()
         self.ctx.lineWidth = width
         self.ctx.moveTo(x1, y1)
@@ -1410,23 +1427,21 @@ ctx = canvas.getContext("2d")
 # 壓力角 pa 單位為角度
 pa = 20
 # 第1齒輪齒數
-n_g1 = 16
+n_g1 = 12
 # 第2齒輪齒數
-n_g2 = 18
+n_g2 = 16
 # 第3齒輪齒數
-n_g3 = 20
+n_g3 = 18
 # 第4齒輪齒數
-n_g4 = 22
+n_g4 = 27
 # 第5齒輪齒數
-n_g5 = 24
+n_g5 = 31
 # 第6齒輪齒數
-n_g6 = 26
+n_g6 = 32
 # 第7齒輪齒數
-n_g7 = 28
-# 第8齒輪齒數
-n_g8 = 30
+n_g7 = 52
 # m 為模數, 根據畫布的寬度, 計算適合的模數大小
-m = (0.6*canvas.width)/(n_g1+n_g2+n_g3+n_g4)
+m = (0.6*canvas.width)/(n_g1+n_g2+n_g3+n_g4+n_g5)
 # 根據模數 m, 計算各齒輪的節圓半徑
 rp_g1 = m*n_g1/2
 rp_g2 = m*n_g2/2
@@ -1435,7 +1450,6 @@ rp_g4 = m*n_g4/2
 rp_g5 = m*n_g5/2
 rp_g6 = m*n_g6/2
 rp_g7 = m*n_g7/2
-rp_g8 = m*n_g8/2
 #單一正齒輪繪圖呼叫格式 Spur(ctx).Gear(x, y, r, n, pa, "blue")
 # 開始繪製囓合齒輪輪廓
 # 繪圖第1齒輪的圓心座標, 因為希望繪圖佔去 canvas.width 的 80%, 所以兩邊各預留 10% 距離
@@ -1458,17 +1472,12 @@ x_g5 = x_g1 + rp_g1 + 2*rp_g2 + 2*rp_g3+rp_g4
 y_g5 = y_g4+rp_g4+rp_g5
 
 # 第6齒輪的圓心座標
-x_g6 =x_g1 + rp_g1 + 2*rp_g2 + 2*rp_g3+rp_g4
-y_g6 = y_g5+rp_g5+rp_g6
+x_g6 = x_g1 + rp_g1 + 2*rp_g2 + 2*rp_g3+rp_g4
+y_g6 = y_g4+rp_g4+2*rp_g5+rp_g6
 
 # 第7齒輪的圓心座標
-x_g7 =x_g6-rp_g6-rp_g7
-y_g7 = y_g5+rp_g5+rp_g6
-
-# 第8齒輪的圓心座標
-x_g8 =x_g7-rp_g7-rp_g8
-y_g8 = y_g5+rp_g5+rp_g6
-
+x_g7 = x_g1 + rp_g1 + 2*rp_g2 + 2*rp_g3+rp_g4-rp_g6-rp_g7
+y_g7 = y_g4 +rp_g4+2*rp_g5+rp_g6
 # 將第1齒輪順時鐘轉 90 度, 也就是 math.pi/2
 # 使用 ctx.save() 與 ctx.restore() 以確保各齒輪以相對座標進行旋轉繪圖
 ctx.save()
@@ -1479,14 +1488,8 @@ ctx.rotate(math.pi/2)
 # put it back
 ctx.translate(-x_g1, -y_g1)
 # 繪製第一個齒輪輪廓
-Spur(ctx).Gear(x_g1, y_g1, rp_g1, n_g1, pa, "black")
+Spur(ctx).Gear(x_g1, y_g1, rp_g1, n_g1, pa, "#FF0000")
 ctx.restore()
-
-ctx.beginPath()
-ctx.fillStyle = "#0000FF"
-ctx.font = "20px ScriptS"
-ctx.fillText("40423112 ",x_g1-20, y_g1)
-ctx.stroke()
 
 # 將第2齒輪逆時鐘轉 90 度之後, 再多轉一齒, 以便與第1齒輪進行囓合
 ctx.save()
@@ -1496,14 +1499,8 @@ ctx.translate(x_g2, y_g2)
 ctx.rotate(-math.pi/2-math.pi/n_g2)
 # put it back
 ctx.translate(-x_g2, -y_g2)
-Spur(ctx).Gear(x_g2, y_g2, rp_g2, n_g2, pa, "blue")
+Spur(ctx).Gear(x_g2, y_g2, rp_g2, n_g2, pa, "#FF8800")
 ctx.restore()
-
-ctx.beginPath()
-ctx.fillStyle = "#0000FF"
-ctx.font = "20px ScriptS"
-ctx.fillText("40423116 ",x_g2-20, y_g2)
-ctx.stroke()
 
 # 將第3齒輪逆時鐘轉 90 度之後, 再往回轉第2齒輪定位帶動轉角, 然後再逆時鐘多轉一齒, 以便與第2齒輪進行囓合
 ctx.save()
@@ -1520,14 +1517,8 @@ ctx.translate(x_g3, y_g3)
 ctx.rotate(-math.pi/2-math.pi/n_g3+(math.pi+math.pi/n_g2)*n_g2/n_g3)
 # put it back
 ctx.translate(-x_g3, -y_g3)
-Spur(ctx).Gear(x_g3, y_g3, rp_g3, n_g3, pa, "red")
+Spur(ctx).Gear(x_g3, y_g3, rp_g3, n_g3, pa, "#FFFF00")
 ctx.restore()
-
-ctx.beginPath()
-ctx.fillStyle = "#0000FF"
-ctx.font = "20px ScriptS"
-ctx.fillText("40423118 ",x_g3-20, y_g3)
-ctx.stroke()
 
 # 將第4齒輪逆時鐘轉 90 度之後, 再往回轉第3齒輪定位帶動轉角, 然後再逆時鐘多轉一齒, 以便與第2齒輪進行囓合
 ctx.save()
@@ -1537,14 +1528,8 @@ ctx.translate(x_g4, y_g4)
 ctx.rotate(math.pi/2-math.pi/n_g4+(math.pi+math.pi/n_g3)*n_g3/n_g4*2)
 # put it back
 ctx.translate(-x_g4, -y_g4)
-Spur(ctx).Gear(x_g4, y_g4, rp_g4, n_g4, pa, "green")
+Spur(ctx).Gear(x_g4, y_g4, rp_g4, n_g4, pa, "#00FF00")
 ctx.restore()
-
-ctx.beginPath()
-ctx.fillStyle = "#0000FF"
-ctx.font = "20px ScriptS"
-ctx.fillText("40423127 ",x_g4-20, y_g4)
-ctx.stroke()
 
 
 # 將第5齒輪逆時鐘轉 90 度之後, 再往回轉第3齒輪定位帶動轉角, 然後再逆時鐘多轉一齒, 以便與第2齒輪進行囓合
@@ -1555,14 +1540,8 @@ ctx.translate(x_g5, y_g5)
 ctx.rotate(math.pi/2-math.pi/n_g5+(math.pi+math.pi/n_g4)*n_g4/n_g5*2)
 # put it back
 ctx.translate(-x_g5, -y_g5)
-Spur(ctx).Gear(x_g5, y_g5, rp_g5, n_g5, pa, "black")
+Spur(ctx).Gear(x_g5, y_g5, rp_g5, n_g5, pa, "#00FFFF")
 ctx.restore()
-
-ctx.beginPath()
-ctx.fillStyle = "#0000FF"
-ctx.font = "20px ScriptS"
-ctx.fillText("40423131 ",x_g5-20, y_g5)
-ctx.stroke()
 
 
 # 將第6齒輪逆時鐘轉 90 度之後, 再往回轉第3齒輪定位帶動轉角, 然後再逆時鐘多轉一齒, 以便與第2齒輪進行囓合
@@ -1570,17 +1549,11 @@ ctx.save()
 # translate to the origin of second gear
 ctx.translate(x_g6, y_g6)
 # rotate to engage
-ctx.rotate(math.pi/2-math.pi/n_g6+(math.pi+math.pi/n_g5)*n_g5/n_g6*2)
+ctx.rotate(-math.pi/2-math.pi/n_g6+(math.pi+math.pi/n_g5)*n_g5/n_g6*2)
 # put it back
 ctx.translate(-x_g6, -y_g6)
-Spur(ctx).Gear(x_g6, y_g6, rp_g6, n_g6, pa, "blue")
+Spur(ctx).Gear(x_g6, y_g6, rp_g6, n_g6, pa, "#0066FF")
 ctx.restore()
-
-ctx.beginPath()
-ctx.fillStyle = "#0000FF"
-ctx.font = "20px ScriptS"
-ctx.fillText("40423132 ",x_g6-20, y_g6)
-ctx.stroke()
 
 
 # 將第7齒輪逆時鐘轉 90 度之後, 再往回轉第3齒輪定位帶動轉角, 然後再逆時鐘多轉一齒, 以便與第2齒輪進行囓合
@@ -1591,15 +1564,8 @@ ctx.translate(x_g7, y_g7)
 ctx.rotate(-math.pi/2-math.pi/n_g7+(math.pi+math.pi/n_g6)*n_g6/n_g7)
 # put it back
 ctx.translate(-x_g7, -y_g7)
-Spur(ctx).Gear(x_g7, y_g7, rp_g7, n_g7, pa, "red")
+Spur(ctx).Gear(x_g7, y_g7, rp_g7, n_g7, pa, "purple")
 ctx.restore()
-
-ctx.beginPath()
-ctx.fillStyle = "#0000FF"
-ctx.font = "20px ScriptS"
-ctx.fillText("40423152 ",x_g7-20, y_g7)
-ctx.stroke()
-
 </script>
             </div>
             <!-- /.entry-content -->
@@ -1631,8 +1597,8 @@ ctx.stroke()
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./xie-tong-chan-pin-she-ji-shi-xi-di-shi-er-ce-shi-zhou-zuo-ye-40423152.html">
-                            協同產品設計實習 第十二測試周作業 40423152
+                        <a href="./xie-tong-chan-pin-she-ji-shi-xi-di-shi-er-zhou-zuo-ye-40423152.html">
+                            協同產品設計實習 第十二周作業 40423152
                         </a>
                     </li>
                     <li class="list-group-item">
