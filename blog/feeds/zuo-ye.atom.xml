@@ -2,9 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/zuo-ye.atom.xml" rel="self"></link><id>./</id><updated>2017-06-22T12:56:00+08:00</updated><entry><title>期末</title><link href="./qi-mo.html" rel="alternate"></link><published>2017-06-22T12:56:00+08:00</published><updated>2017-06-22T12:56:00+08:00</updated><author><name>40423152</name></author><id>tag:,2017-06-22:./qi-mo.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;本周內容&lt;/p&gt;
+&lt;p&gt;四足行走機構我與18號負責駔裝與測試的部分&lt;/p&gt;
 &lt;p&gt;初代原型機&lt;/p&gt;
+&lt;p&gt;組裝時利用了單芯線作為軸，並用棒棒糖棍當成墊圈使用&lt;/p&gt;
 &lt;p&gt;交給學長印製時有尺寸搞錯 導致這種情況發生&lt;/p&gt;
-&lt;p&gt;於是有更動過設計部分&lt;/p&gt;
+&lt;p&gt;於是有更動過設計部分，拍攝者為18號，被拍攝者為52號(我)&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/222612490" width="640" height="1152" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="https://vimeo.com/222612490"&gt;video-1493569301&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
@@ -16,6 +18,7 @@
 &lt;p&gt;&lt;a href="https://vimeo.com/222340552"&gt;40423116-2017springcd-final-6.mp4&lt;/a&gt; from &lt;a href="https://vimeo.com/user47573583"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;雙足行走機構&lt;/p&gt;
+&lt;p&gt;練習時未發現在錄製，故影片有進行剪輯。&lt;/p&gt;
 &lt;p&gt;零件繪製部分&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/223497595" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -31,10 +34,17 @@
 
 &lt;p&gt;&lt;a href="https://vimeo.com/223501721"&gt;錄製_2017_06_29_02_44_37_7&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;3D檢視
+&lt;p&gt;3D檢視&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../data/w18/LEG.slvs"&gt;雙足-腳&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../data/w18/washer.slvs"&gt;雙足-墊圈&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../data/w18/mid.slvs"&gt;雙足-軸&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../data/w18/assembly.slvs"&gt;雙足組合&lt;/a&gt;&lt;/p&gt;
 &lt;iframe src="./../w18/washer.html" width="800" height="600"&gt;&lt;/iframe&gt;
+
 &lt;iframe src="./../w18/leg.html" width="800" height="600"&gt;&lt;/iframe&gt;
-&lt;iframe src="./../w18/mid.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;iframe src="./../w18/mid.html" width="800" height="600"&gt;&lt;/iframe&gt;
+
 &lt;p&gt;&lt;link href="./../work/madeleine/src/css/Madeleine.css" rel="stylesheet"&gt;
 &lt;script src="./../work/madeleine/src/stats.js"&gt;&lt;/script&gt;
 &lt;script src="./../work/madeleine/src/detector.js"&gt;&lt;/script&gt;
